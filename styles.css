@@ -21,6 +21,7 @@ p {
     font-family: Airbnb Cereal, "san-sarif";
     font-size: 16px;
 }
+/* hero-header-section */
 .hero {
     height: 20dvh;
 }
@@ -31,54 +32,97 @@ p {
     padding: 0 5dvw;
     align-items: center;
 }
-.hero .header > div {
+.header > div {
     flex: 1 1 33%;
 }
-.hero .logo img{
+.header .logo img{
     height: 32px;
 
 }
-.hero .center {
+.header .center {
     display: flex;
     justify-content: center;
 }
-.hero .center > :nth-child(1) {
+.header .center > :nth-child(1) {
     padding: 5px;
     font-weight: 600;
 }
 
-.hero .center > :nth-child(2) {
+.header .center > :nth-child(2) {
     padding: 5px;
     font-weight: 100;
     color: grey;
     margin-left: 20px;
 }
-.hero .right {
+.header .right {
     display: flex;
     justify-content: end;
     align-items: center;
 }
 
-.hero .right p {
+.header .right p {
     padding: 5px;
     font-weight: 600;
     font-size: 14px;
 }
 
-.hero .right > :nth-child(2) {
+.header .right > :nth-child(2) {
     height: 16px;
     margin: 0 10px;
 }
 
-.hero .right .container {
-    width: 120px;
-    margin: 8px;
-    border-radius: 20px;
-    border-color: black;
-    border-width: 5px;
-    border-style: solid;
+.hero .container {
+    display: flex;
+    align-items: center;
+    margin: 0 8px;
+    padding: 8px;
+    border: 1px solid lightgrey;
+    border-radius: 30px;
 }
 
-.hero .right .container img{
-    height: 24px;
+.header .container > :first-child {
+    height: 16px;
+    margin: 0 10px 0 5px;
+}
+
+.header .container > :nth-child(2) {
+    height: 32px;
+
+}
+/* hero-searbar-section */
+.search-bar .container {
+    width: 55%;
+    margin: 0 auto;
+}
+
+.search-bar .section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1 1 16.5%;
+    padding: 10px 20px;
+}
+.search-bar .container > div:nth-child(1){
+    flex-basis: 33%;
+}
+.search-bar .container > div:nth-last-child(1){
+    flex-basis: 33%;
+}
+
+.search-bar .section p:first-of-type {
+    font-size: 12px;
+    font-weight: 600;
+}
+.search-bar .section p:nth-of-type(2) {
+    font-size: 14px;
+    color: grey;
+}
+
+.search-btn img{
+    height: 16px;
+}
+.search-btn {
+    background-color: #FF385C;
+    padding: 8px;
+    border-radius: 30px;
 }
