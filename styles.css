@@ -100,7 +100,8 @@ p {
     justify-content: space-between;
     align-items: center;
     flex: 1 1 16.5%;
-    padding: 10px 20px;
+    padding-left: 20px;
+    border-left: 1px solid lightgrey;
 }
 .search-bar .container > div:nth-child(1){
     flex-basis: 33%;
@@ -118,11 +119,36 @@ p {
     color: grey;
 }
 
+.search-btn {
+    background-color: #FF385C;
+    padding: 0;
+    border-radius: 25px;
+    height: 50px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .search-btn img{
     height: 16px;
 }
-.search-btn {
-    background-color: #FF385C;
-    padding: 8px;
-    border-radius: 30px;
+ 
+.box {
+    height: 100px;
+    aspect-ratio: 1;
+    background-color: yellow;
+    position: absolute;
+    left: 50%;
 }
+.box::before {
+    content: "";
+    position: absolute;
+    left: 25px;
+    bottom: 0;
+    height: 15px;
+    width: 70%;
+    border-bottom: 3px solid #000;
+
+}
+
