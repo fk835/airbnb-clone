@@ -7,3 +7,78 @@ a {
     text-decoration: none;
     color: black;
 }
+@font-face {
+    font-family: Airbnb Cereal;
+    src: url("./src/font/AirbnbCereal_W_Bk.otf") format("opentype"),
+        url("./src/font/AirbnbCereal_W_Bd.otf") format("opentype"),
+        url("./src/font/AirbnbCereal_W_Blk.otf") format("opentype"),
+        url("./src/font/AirbnbCereal_W_Lt.otf") format("opentype"),
+        url("./src/font/AirbnbCereal_W_Md.otf") format("opentype"),
+        url("./src/font/AirbnbCereal_W_XBd.otf") format("opentype");
+}
+
+p {
+    font-family: Airbnb Cereal, "san-sarif";
+    font-size: 16px;
+}
+.hero {
+    height: 20dvh;
+}
+
+.hero .header {
+    display: flex;
+    height: 50%;
+    padding: 0 5dvw;
+    align-items: center;
+}
+.hero .header > div {
+    flex: 1 1 33%;
+}
+.hero .logo img{
+    height: 32px;
+
+}
+.hero .center {
+    display: flex;
+    justify-content: center;
+}
+.hero .center > :nth-child(1) {
+    padding: 5px;
+    font-weight: 600;
+}
+
+.hero .center > :nth-child(2) {
+    padding: 5px;
+    font-weight: 100;
+    color: grey;
+    margin-left: 20px;
+}
+.hero .right {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.hero .right p {
+    padding: 5px;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.hero .right > :nth-child(2) {
+    height: 16px;
+    margin: 0 10px;
+}
+
+.hero .right .container {
+    width: 120px;
+    margin: 8px;
+    border-radius: 20px;
+    border-color: black;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.hero .right .container img{
+    height: 24px;
+}
